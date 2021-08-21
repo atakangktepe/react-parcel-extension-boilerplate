@@ -2,17 +2,21 @@
   "name": "extension-name",
   "version": "0.1.0",
   "description": "Description",
-  "main": "src/js/main.js",
+  "main": "src/build/main.js",
   "scripts": {
-    "build": "parcel build src/js/main.js -d src/build/ -o main.js",
-    "watch": "parcel watch src/js/main.js -d src/build/ -o main.js"
+    "build": "parcel build src/js/main.js --dist-dir src/build/",
+    "watch": "parcel watch src/js/main.js --dist-dir src/build/"
   },
   "author": "Atakan Goktepe",
   "dependencies": {
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.6.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@parcel/transformer-react-refresh-wrap": "^2.0.0-rc.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
   }
 }
