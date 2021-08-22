@@ -2,7 +2,6 @@
   "name": "extension-name",
   "version": "0.1.0",
   "description": "Description",
-  "main": "src/build/main.js",
   "scripts": {
     "build": "parcel build src/js/main.js --dist-dir src/build/",
     "watch": "parcel watch src/js/main.js --dist-dir src/build/"
